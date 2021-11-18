@@ -4,11 +4,12 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+
         {
             "type": "java",
-            "name": "Launch NumberRiddle",
+            "name": "Launch NumRiddle",
             "request": "launch",
-            "mainClass": "NumberRiddle",
+            "mainClass": "H:\\sandbox\\NumRiddle.java",
             "projectName": "sandbox_8eb90605"
         },
         {

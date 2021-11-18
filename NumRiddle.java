@@ -1,4 +1,4 @@
-public class NumberRiddle{
+public class NumRiddle{
 
     public static void main(String[] arg){
 
