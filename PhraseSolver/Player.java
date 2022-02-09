@@ -5,43 +5,35 @@
  */
 import java.util.Scanner;
 
-public class Player implements Cloneable
+public class Player
 {
 
-  public Object Clone() throws CloneNotSupportedException{
-    return super.clone();
+  private String name;
+  private int points;
+  private Scanner sc = new Scanner(System.in);
+
+  public Player(String name){
+    this.name = name;
   }
-  
-  String playerName = "";
-  int points = 0;
 
   public Player(){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Please enter your name:");
-    playerName = sc.nextLine();
-    System.out.println("Welcome, " + playerName);
-    points = 0;
-  }
-
-  public Player(String inputName){
-    System.out.println("Welcome, " + inputName);
-    playerName = inputName;
-    points = 0;
-  }
-
-  public String getName(){
-    return playerName;
-  }
-
-  public void setName(String newName){
-    playerName = newName;
+    System.out.println("Enter a player name:");
+    name = sc.nextLine();
   }
   
+  public void addPoints(int points){
+    this.points += points;
+  }
+
+  public void setPoints(int points){
+    this.points = points;
+  }
+
   public int getPoints(){
     return points;
   }
 
-  public void addPoints(int numPoints){
-    points += numPoints;
+  public String getName(){
+    return name;
   }
 }
